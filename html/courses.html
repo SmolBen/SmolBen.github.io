@@ -1,0 +1,169 @@
+<!-- 
+    Name: Ben Nguyen
+    File name: courses.html
+    Date: July 12, 2023
+    Purpose: The webpage contains courses that I have finished, or will finish this semester.
+    It also contains elements to filter, sort and find courses.
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Ben Nguyen">
+    <title>Courses</title>
+    <!-- Link the external CSS file -->
+    <link rel="stylesheet" type="text/css" href="../css/assignment1.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <header>
+      <nav>
+        <a href="index.html">Homepage</a> <!-- Navigation link to the homepage -->
+        <a href="resume.html">Resume</a> <!-- Navigation link to the resume page -->
+        <a href="courses.html">Courses</a> <!-- Navigation link to the courses page -->
+      </nav>
+    </header>
+    <main class="main3">
+        <div class="filter">
+            <select id="courseSelect">
+                <option value="all">All Courses</option>
+                <option value="coursesLevel1">Level 1</option>
+                <option value="coursesLevel2">Level 2</option>
+            </select>
+            <button id="sortAscendingButton">Lowest to Highest</button>
+            <button id="sortDescendingButton">Highest to Lowest</button>
+        </div>
+      <div class="search-bar">
+        <input type="text" id="searchInput" placeholder="&#128270;">
+      </div>
+      <div class="courses">
+
+        <div class="level1">
+          <h4>MAT8001C_060 Tech Math for Computer Science (Level 1)</h4>
+          <p>
+            Students manipulate algebraic expressions, solve algebraic equations and linear systems.
+          </p>
+          <img class= "coursepictures" src="../images/math.jpeg" alt="Math">
+        </div>
+
+        <div class="level1">
+        <h4>CST8300 Achieving Success In Changing Environments (Level 1)</h4>
+        <p>
+          Students explore possibilities, assess aptitudes, apply critical thinking, and resolve
+          complex societal issues in the modern workplace.
+        </p>
+        <img class= "coursepictures" src="../images/success.jpg" alt="Achieving Success">
+        </div>
+
+        <div class="level1">
+        <h4>ENL1813T_016 Communications (Level 1)</h4>
+        <p>
+          Students practice writing, speaking, reading, listening, researching, and using
+          technology for professional communication.
+        </p>
+        <img class= "coursepictures" src="../images/TechnicalScientificWriting.gif" alt="Communications">
+        </div>
+
+        <div class="level1">
+        <h4>CST8116_314 Intro to Computer Programming (Level 1)</h4>
+        <p>
+          Students develop introductory knowledge of computer programming with emphasis on problem
+          analysis and design.
+        </p>
+        <img class= "coursepictures" src="../images/programming.jpeg" alt="Java">
+        </div>
+
+        <div class="level1">
+        <h4>CST8215 Introduction to Database (Level 1)</h4>
+        <p>
+          Students learn the fundamentals of relational databases design using Entity Relation Diagrams
+          and use Structured Query Language.
+        </p>
+        <img class= "coursepictures" src="../images/database.jpeg" alt="Database Textbook">
+        </div>
+
+        <div class="level2">
+          <h4>CST2355 All Sections Database Systems (Level 2)</h4>
+          <p>
+            Students learn database design techniques using both the Entity Relationship model as well as
+            an object oriented approach to designing database systems.
+          </p>
+          <img class= "coursepictures" src="../images/database.jpeg" alt="Database Textbook">
+        </div>
+
+        <div class="level2">
+          <h4>GED6022_360 A Sense of Humour (Level 2)</h4>
+          <p>
+            Humour is a universal tool of communication and social influence. Students survey the development,
+            use, and value of humour in Canadian visual and creative arts.
+          </p>
+          <img class= "coursepictures" src="../images/humor.jpg" alt="Picture of people laughing">
+        </div>
+
+        <div class="level2">
+          <h4>GEP1001_313 Cooperative Education Readiness Computer Programming (Level 2)</h4>
+          <p>
+            Cooperative education (Co-op) allows students to integrate their classroom learning with a real-world
+            experience though paid work terms.
+          </p>
+          <img class= "coursepictures" src="../images/coop.jpg" alt="Picture of the workplace">
+        </div>
+
+        <div class="level2">
+          <h4>ENL2019T_306 Technical Comm. for Eng. Technology (Level 2)</h4>
+          <p>
+            Students practise writing, speaking, reading, listening, locating and documenting information, and using
+            technology to communicate professionally.
+          </p>
+          <img class= "coursepictures" src="../images/TechnicalScientificWriting.gif" alt="English Textbook">
+        </div>
+
+        <div class="level2">
+          <h4>CST8285_311 Web Programming (Level 2)</h4>
+          <p>
+            Internet technologies, full stack web development,
+            and the analysis, design and implementation of internet applications.
+          </p>
+          <img class= "coursepictures" src="../images/web.jpeg" alt="Web Programming Texbook">
+        </div>
+
+        <div class="level2">
+          <h4>CST8284_311 Object Oriented Programming (Java) (Level 2)</h4>
+          <p>
+            Students explore object-oriented programming methodology using the Java programming language.
+          </p>
+          <img class= "coursepictures" src="../images/programming.jpeg" alt="Java Textbook">
+        </div>
+
+        <div class="level2">
+          <h4>CST8102_320_321_322_323 Operating Systems Fund (GNU/Linux) (Level 2)</h4>
+          <p>
+            Students explore the basic concepts and components
+            of Operating Systems (OS), and how they function and interact with hardware and software components. 
+          </p>
+          <img class= "coursepictures" src="../images/linux.png" alt="Linux Textbook">
+        </div>
+      </div>
+    </main>
+    <footer>
+      <p>&copy; 2023 Ben Nguyen</p> <!-- Copyright statement -->
+    </footer>
+    <!-- Link the external Javascript file -->
+    <script src="../javascript/sort.js"></script>
+  </body>
+</html>
+
+<!-- 
+  References:
+  [1]“Basic Technical Mathematics with Calculus SI Version, Canadian Edition | Technical Math | Technical, Trade, & Business Mathematics | Mathematics | Store | Learner US Site,” www.pearson.com. https://www.pearson.com/store/p/basic-technical-mathematics-with-calculus-si-version/P200000002611/9780136963813 (accessed Jul. 10, 2023).
+  ‌[2]“Business People Climbing on Ladder to Success. Competition Career Achieving the Goal Concept. Vector illustration Stock Vector,” Adobe Stock. https://stock.adobe.com/ca/images/business-people-climbing-on-ladder-to-success-competition-career-achieving-the-goal-concept-vector-illustration/225172752 (accessed Jul. 10, 2023).
+  [3]“The Mayfield Handbook of Technical and Scientific Writing,” www.mit.edu. https://www.mit.edu/course/21/21.guide/
+  ‌[4]“Programming Logic & Design, Comprehensive, 9th Edition - 9781337102070 - Cengage,” www.cengage.com. https://www.cengage.ca/c/isbn/9781337102070/ (accessed Jul. 10, 2023).
+  ‌[5]“Database Processing: Fundamentals, Design, and Implementation,” www.pearson.com. https://www.pearson.com/en-us/subject-catalog/p/database-processing-fundamentals-design-and-implementation/P200000001375/9780136931577 (accessed Jul. 10, 2023).
+  ‌[6]“Vertical photo Happy friends looking at Camera and laughing. Smiling...,” iStock, Jan. 04, 2023. https://www.istockphoto.com/photo/happy-young-friends-looking-camera-and-laughing-smiling-group-of-people-having-fun-gm1448475558-485981671 (accessed Jul. 10, 2023).
+  [7]“Teamwork%20Vertical bilder – Bla gjennom 21,756 arkivbilder, vektorer og videoer,” Adobe Stock. https://stock.adobe.com/no/search?k=teamwork%20vertical (accessed Jul. 10, 2023).
+  [8]"5 Website Navigation Bar Examples To Enhance Your Web Design," Brush Up. https://creativemarket.com/blog/website-navigation-bar-examples (accessed Jul. 10, 2023).
+  [9]“Linux logo and symbol, meaning, history, PNG.” https://1000logos.net/linux-logo/ (accessed Jul. 10, 2023).
+-->

@@ -1,0 +1,283 @@
+/*
+*   Name: Ben Nguyen
+*    File name: assignment1.css
+*    Date: July 12, 2023
+*    Purpose: This file contains css for all 3 html files.
+*/
+
+/* Set background color for the body */
+body {
+    background-color: #191919;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    color: #fff;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 18px;
+}
+
+/* Style the header */
+header {
+    color: #fff;
+    padding: 10px;
+    font-size: 18px;
+    opacity: 0; /* Initially hide the header */
+    animation: slideInFromTop 1s ease-in-out forwards; /* Apply animation */
+}
+
+/* Style the navigation links */
+nav a {
+    color: #fff;
+    text-decoration: none;
+    margin-right: 30px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    opacity: 0.5;
+    transition: opacity 0.25s;
+}
+
+main a {
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    color: #fff;
+    padding: 5px 10px;
+    text-decoration: none;
+    font-size: 12px;
+    letter-spacing: 1px;
+    font-weight: 500;
+    transition: border-color 0.25s;
+}
+
+/* Align the navigation links to the right */
+nav {
+    text-align: right;
+    margin-right: 30px;
+    margin-top: 30px;
+    opacity: 0; /* Initially hide the navigation links */
+    animation: slideInFromTop 1s ease-in-out forwards; /* Apply animation */
+}
+
+/* Style the main content */
+main {
+    display: flex;
+    padding: 5vw;
+    margin-left: 5vw;
+    opacity: 0; /* Initially hide the main content */
+    animation: slideInFromTop 1s ease-in-out forwards; /* Apply animation */
+}
+
+.main2 {
+    display: block;
+    margin-left: 2vw;
+}
+
+.paragraph-container {
+    border: none;
+    width: 45vw;
+    padding-left: 4vw;
+    padding-top: 5vh;
+}
+
+/* Style the paragraphs */
+#title {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 35px;
+    font-weight: 500;
+    opacity: 0; /* Initially hide the title */
+    margin-top: 10vh;
+    margin-bottom: 2vh;
+    animation: slideInFromTop 1s ease-in-out forwards; /* Apply animation */
+}
+
+p {
+    font-family: 'Montserrat', sans-serif;
+    opacity: 0.5;
+}
+
+li {
+    opacity: 0.5;
+}
+
+/* Style the image */
+.image-container {
+    width: 20vw;
+    padding-top: 11vh;
+    padding-left: 5vh;
+    display: flex; /* Add display property */
+    justify-content: flex-end; /* Align image to the right */
+    align-items: flex-start; /* Align image to the top */
+}
+
+#ben {
+    width: 20vw;
+    height: 20vw;
+    max-width: 220px;
+    max-height: 220px;
+    border-radius: 50%;
+    animation: slideInFromTop 1s ease-in-out forwards;
+}
+
+.main2 img {
+    width: 50vw;
+    height: auto;
+    border-radius: 0.20cm;
+    transition: transform 0.3s ease;
+}
+/* Style the footer */
+footer {
+    color: #fff;
+    padding: 10px;
+    text-align: left;
+    margin-top: auto;
+    font-size: 15px;
+    opacity: 0; /* Initially hide the footer */
+    animation: slideInFromTop 1s ease-in-out forwards; /* Apply animation */
+
+    display: flex; /* Enable Flexbox */
+    justify-content: space-between;; /* Center the items horizontally */
+    align-items: center; /* Center the items vertically */
+}
+
+footer > * {
+    margin: 0 30px; /* Add spacing on the left and right */
+}
+
+nav a:hover {
+    opacity: 1;
+}
+
+main a:hover {
+    border-color: rgba(255, 255, 255, 1);
+}
+
+.main2 img:hover {
+    transform: scale(1.02); /* Increase the scale to 1.2 (20% larger) */
+}
+
+.lab {
+    opacity: 1;
+}
+
+.coursepictures {
+
+    width: 320px; /* Set the desired width */
+    height: auto; /* Maintain aspect ratio */
+
+}
+
+.courses {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+  /* Textbook item */
+.level1, .level2 {
+    background-color: #424242;
+    display: block;
+    margin: 0 auto;
+    width: 320px; 
+    margin-top: 20px;
+    padding: 15px;
+    border-radius: 5px;
+    transition: transform 0.25s;
+
+}
+
+.level1 p, .level2 p {
+    font-size: 17px;
+}
+
+.level1:hover, .level2:hover {
+    border: 1px solid rgba(255, 255, 255, 1);
+    transform: scale(1.02);
+}
+
+.main3 {
+    display: block;
+    margin-left: 2vw;
+}
+
+/* Search bar styles */
+.search-bar {
+    margin: 20px 0;
+}
+
+#searchInput {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    border-radius: 4px;
+    background-color: #191919;
+    color: #fff;
+    font-family: 'Montserrat', sans-serif;
+}
+
+  /* Button styles */
+button {
+    border-color:  rgba(255, 255, 255, 0.5);
+    border-width: 1px;
+    border-radius: 4px;
+    padding: 8px;
+    font-size: 14px;
+    font-family: 'Montserrat', sans-serif;
+    background-color: #191919;
+    color: #fff;
+    cursor: pointer;
+}
+
+button:hover {
+    border-color: rgba(255, 255, 255, 1)
+}
+
+  /* Drop-down menu styles */
+#courseSelect {
+    padding: 8px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+    border-color:  rgba(255, 255, 255, 0.5);
+    border-radius: 4px;
+    background-color: #191919;
+    color: #fff;
+}
+/* Animation keyframes */
+@keyframes slideInFromTop {
+    0% {
+        opacity: 0;
+        transform: translateY(-100%);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Align the navigation links to the center in mobile mode */
+@media screen and (max-width: 768px) {
+    nav {
+    text-align: center;
+    }
+
+    .image-container {
+        width: 25vw;
+        padding-top: 25vh;
+        padding-left: 5vh;
+    }
+
+    #ben {
+        width: 25vw;
+        height: 25vw;
+    }
+
+    main {
+        margin-left: 2vw;
+    }
+
+    button, #courseSelect {
+        font-size: 12px;
+    }
+
+    #searchInput {
+        width: 92%;
+    }
+}

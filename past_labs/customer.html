@@ -1,0 +1,195 @@
+<!-- 
+    Name: Ben Nguyen
+    File name: customer.html
+    Date created: June 1, 2023
+    Purpose: This page is a Customer Registration Form.
+    The form collects information from customers for registration purposes.
+-->
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="description" content="">
+        <meta name="keywords" content="">
+        <meta name="author" content="Ben Nguyen">
+        <title>Customer Webpage</title>
+    </head>
+    <body>
+        <h2>Customer Registration</h2>
+        <form>
+            <!-- Fieldset for User Info -->
+            <fieldset>
+                <legend>1. User Info</legend>
+                <table>
+                    <tr>
+                        <td>First Name</td>
+                        <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+                        <td>Last Name</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <!-- Put my first name into the textbox as read-only -->
+                            <input type="text" id="firstName" name="firstName" size="16" readonly value="Ben">
+                            <label for="firstName"></label>
+                        </td>
+                        <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+                        <td>
+                            <input type="text" id="lastName" name="lastName" size="16">
+                            <label for="lastName"></label>
+                        </td>
+                    </tr>
+                </table>
+                <table>
+                    <tr>
+                        <td>Email</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <input type="text" id="email" name="Email" size="46" placeholder="format for email is xxx@yyy.zzz">
+                            <label for="email"></label>
+                        </td>
+                    </tr>
+                </table>
+                <table>
+                    <tr>
+                        <td>Password</td>
+                        <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+                        <td>Password Repeat</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <input type="text" id="password" name="Password" size="16" placeholder="at least 8 characters">
+                            <label for="password"></label>
+                        </td>
+                        <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+                        <td>
+                            <input type="text" id="passwordRepeat" name="Password Repeat" size="15" placeholder="at least 8 characters">
+                            <label for="passwordRepeat"></label>
+                        </td>
+                    </tr>
+                </table>
+            </fieldset>
+        <p></p>
+            <!-- Fieldset for Location -->
+            <fieldset>
+                <legend>2. Location</legend>
+                <table>
+                    <tr>
+                        <td>Address</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <input type="text" id="Address" name="firstName" size="46">
+                            <label for="Address"></label>
+                        </td>
+                    </tr>
+                </table>
+                <table>
+                    <tr>
+                        <td>City </td>
+                        <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+                        <td>State </td>
+                        <td>&nbsp;&nbsp;</td>
+                        <td>Zip </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <input type="text" id="City" name="City" size="16">
+                            <label for="City"></label>
+                        </td>
+                        <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+                        <td>
+                            <input type="text" id="State" name="State" size="3">
+                            <label for="State"></label>
+                        </td>
+                        <td>&nbsp;&nbsp;</td>
+                        <td>
+                            <input type="text" id="Zip" name="Zip" size="7">
+                            <label for="Zip"></label>
+                        </td>
+                    </tr>
+                </table>
+                <table>
+                    <tr>
+                        <td>Phone </td>
+                        <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+                        <td>Country </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <input type="text" id="Phone" name="Phone" size="16" placeholder="NNN-NNN-NNNN">
+                            <label for="Phone"></label>
+                        </td>
+                        <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+                        <td>
+                            <!-- Create a drop-down list with options for Country -->
+                            <select>  
+                                <option value = "Canada"> Canada </option>
+                                <option value = "Vietnam"> Vietnam </option>  
+                                <option value = "Jamaica"> Jamaica </option>
+                                <option value = "China"> China </option>
+                                <option value = "Japan"> Japan </option>                          
+                            </select>
+                        </td>
+                    </tr>
+                </table>
+                <table>
+                    <tr>
+                        <td>Continent</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <!-- Create a radio button for North America -->
+                            <input type="radio" id="Continent1" name="Continent" value="North America">
+                            <label for="Continent1">North America</label>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <!-- Create a radio button for Europe -->
+                            <input type="radio" id="Continent2" name="Continent" value="Europe">
+                            <label for="Continent2">Europe</label>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <!-- Create a radio button for South America -->
+                            <input type="radio" id="Continent3" name="Continent" value="South America">
+                            <label for="Continent3">South America</label>
+                        </td>
+                    </tr>
+                </table>
+            </fieldset>
+            <!-- Fieldset for Personal Details -->
+            <fieldset>
+                <legend>3. Personal Details</legend>
+                <table>
+                    <tr>
+                        <td>Birth Day</td>
+                        <td>Favorite Color</td>
+                    </tr>
+                    <tr>
+                        <td>
+                                <!-- Create a date picker -->
+                                <input type="date" id="birthDay" name="birthDay">
+                                <label for="birthDay"></label>
+                        </td>
+                        <td>
+                                <!-- Create a color picker -->
+                                <input type="color" id="favoriteColor" name="Favorite Color">
+                                <label for="favoriteColor"></label>
+                        </td>
+                    </tr>
+                </table>
+            </fieldset>
+        <h4>4. All Done</h4>
+        <!-- Create a checkbox -->
+        <input type="checkbox" id="Terms" name="Terms" value="Terms of the Site">
+        <label for="Terms"> I agree to the <a href="C:/homework/Semester%202/Web%20Programming/lab2/Ben_Nguyen/customer.html">Terms of the Site</a></label><br>
+        <input type="submit" value="Send">
+        <input type="reset" value="Clear information">
+        <!-- Copyright information -->
+        <p>&copy; 2023 Ben Nguyen. All rights reserved.</p>
+        </form>
+    </body>
+</html>

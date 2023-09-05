@@ -1,0 +1,118 @@
+/*
+* Name: Ben Nguyen
+*/
+
+body {
+  background-color: #ddd78d;
+  color: #333333; 
+  font-family: Arial, sans-serif; 
+}
+
+header {
+  background-color: #60594d; 
+    color: #93a29b;
+    border: 4px solid #333333; 
+    padding: 10px;
+}
+
+header h1 {
+  font-size: 4vw;
+}
+
+footer {
+  background-color: #60594d; 
+    color: #93a29b;
+    border: 4px solid #333333;
+    padding: 10px;
+}
+
+img {
+  float: right; 
+  width: 25%; 
+  margin: 10px;
+}
+
+main h2 {
+    font-weight: bold; 
+}
+
+  /* General paragraphs */
+p[class="general"] {
+    font-weight: normal;
+    font-size: 14pt; 
+    text-align: left; 
+    margin: 10px 0; 
+}
+
+  /* Quotation paragraphs */
+p[class="quotation"] {
+    font-size: 14pt; 
+    text-align: center; 
+    background-color: #DCBF85;
+    margin: 10px 20px;
+    padding: 10px;
+}
+
+  /* Unordered list items */
+ul li {
+    font-size: 14pt;
+    font-weight: bold; 
+    margin: 10px 0; 
+}
+
+  /* Ordered list items */
+ol li {
+    font-size: 14pt;
+    font-weight: normal;
+}
+
+nav {
+  display: flex;
+  justify-content: center; /* Center the content horizontally */
+  font-size:12pt;
+}
+
+nav li {
+  display: inline-block; /* Display navigation items in a row */
+  margin: 0 10px;
+}
+
+nav a {
+  align-items: center; /* Center the content vertically */
+  justify-content: center; /* Center the content horizontally */
+  color: #333333;
+  text-decoration: none; /* Get rid of the underline of the link */
+  background-color: #ffffff;
+  border-style: solid;
+  border-color: #333333;
+  border-radius: 10px;
+  margin: 0px 2px;
+  padding: 1px 5px;
+}
+
+nav a:hover {
+  background-color:#D8D8D8;
+  color: #8B635C;
+}
+
+footer {
+  text-align: center; /* Center align the content in the footer */
+}
+
+/* Footer link */
+footer a {
+  color: #0000EE;
+  text-decoration: none;
+  display: inline-block;
+  padding: 20px 0;
+}
+
+/* Change the link's color when hovered */
+footer a:hover {
+  color: #8B635C;
+}
+
+address {
+  text-align: right;
+  font-size: 10pt;
+}

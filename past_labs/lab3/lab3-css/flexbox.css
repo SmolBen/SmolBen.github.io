@@ -1,0 +1,95 @@
+
+body {
+    border: 3px solid black;
+    border-radius: 5px;
+    background-color: #f1f1f1;
+    margin: 5px;
+    font-family: Arial, sans-serif;
+}
+
+/* Styling for the header element */
+header {
+    color: white;
+    background-color: #333;
+    padding: 22px;
+    text-align: center;
+}
+
+/* Flexbox container with space between items,
+   wrapping enabled, and max width */
+.container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap; 
+    max-width: 800px;
+    margin: 40px auto;
+}
+
+/* Styling for the boxes */
+.box {
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin: 7px 1px;
+    padding: 20px;
+    flex: 1;
+    min-width: 200px;
+    transition: transform 0.4s, box-shadow 0.4s;
+    filter: opacity(60%);
+    z-index: 1;
+}
+
+/* Hover effect on the boxes */
+.box:hover {
+    border: 3px solid #333;
+    box-shadow: 0 10px 10px -7px #9f9f9f;
+    filter: opacity(100%);
+    z-index: 2;
+    transform: scale(1.02) translateY(-10px);
+    margin: 1px -1px;
+} 
+
+
+/* Styling for the footer paragraph */
+footer p {
+    margin: 20px;
+}
+
+/* Change flex direction to column on small screens */
+@media screen and (max-width: 600px) {
+    .container {
+    flex-direction: column;
+    }
+    /* Change flex direction to column on small screens */
+    main {
+        text-align: center;
+    }
+    /* Adjust margin for boxes on small screens */
+    .box {
+        margin: 1px 10px ;
+    }
+    .box:hover {
+        transform: translateY(-7px);
+        margin: -1px 7px;
+    } 
+}
+
+.red {
+   /* background-color: #FBB9C5; */
+    background-color: #ffa0a0;
+}
+
+.blue {
+    background-color: #B8DFE6;
+}
+
+.green {
+    background-color: #C3EDBF;
+}
+
+.yellow {
+    background-color: #feecabf4;
+}
+
+.orange {
+    background-color: #FDD0B1;
+}
